@@ -93,5 +93,13 @@ public function update($id_kegiatan)
         $this->promo->delete($id_kegiatan);
         redirect(site_url('page'));
     }
+
+    private function _form_val()
+    {
+        $this->form_validation->set_rules('nama_kegiatan', 'Nama Kegiatan', 'trim|required');
+
+        $this->form_validation->set_error_delimiters('<span class="text-danger">', '</span>');
+        $this->form_validation->set_message('required', '%s <font color="red"><strong>Harus Diisi.</strong></font>');
+    }
 }
 
