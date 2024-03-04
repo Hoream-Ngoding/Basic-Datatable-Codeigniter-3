@@ -79,5 +79,11 @@ class Datatable_model extends CI_Model
         $this->db->from($this->table);
         return $this->db->count_all_results();
     }
+
+    function delete($id_kegiatan)
+    {
+        $this->db->where('id_kegiatan', $id_kegiatan);
+        return $this->db->delete($this->table);
+    }
 }
 
