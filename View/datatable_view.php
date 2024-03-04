@@ -47,7 +47,7 @@
 				<div class="d-flex align-items-center">
 					<h4 class="card-title">Program</h4>
 					<div class="ml-auto">
-						<a href="<?= base_url('member/kegiatan/program/create'); ?>" class="btn btn-primary btn-sm float-right text-white m-1"><i class="fas fa-plus"></i> Tambah </a>
+					
 					</div>
 				</div>
 			</div>
