@@ -33,9 +33,9 @@ class Page extends MY_Controller
 
             //add html for action
             $row[] = '
-            <a class="btn btn-sm btn-primary" href="' . site_url('member/kegiatan/program/update/' . $ta->id_kegiatan) . '" title="Edit"><i class="fas fa-edit"></i> <?php echo ' . $ta->id_kegiatan . '; ?></a>
-            <a class="btn btn-sm btn-danger" href="' . site_url('member/kegiatan/program/delete/' . $ta->id_kegiatan) . '" title="Delete"><i class="fas fa-trash"></i> <?php echo ' . $ta->id_kegiatan . '; ?></a>
-            <a class="btn btn-sm btn-info" href="' . site_url('member/kegiatan/peserta/kegiatan/' . $ta->id_kegiatan) . '" title="Setting"><i class="fas fa-users"></i> <?php echo ' . $ta->id_kegiatan . '; ?></a>';
+            <a class="btn btn-sm btn-primary" href="' . site_url('page/update/' . $ta->id_kegiatan) . '" title="Edit"><i class="fas fa-edit"></i> <?php echo ' . $ta->id_kegiatan . '; ?></a>
+            <a class="btn btn-sm btn-danger" href="' . site_url('page/delete/' . $ta->id_kegiatan) . '" title="Delete"><i class="fas fa-trash"></i> <?php echo ' . $ta->id_kegiatan . '; ?></a>
+            <a class="btn btn-sm btn-info" href="' . site_url('peserta/kegiatan/' . $ta->id_kegiatan) . '" title="Setting"><i class="fas fa-users"></i> <?php echo ' . $ta->id_kegiatan . '; ?></a>'; /*catatan : buat dulu controller "Peserta.php" didalamnya ada function "kegiatan" jika tidak akan eror*/
 
             $data[] = $row;
         }
@@ -49,7 +49,6 @@ class Page extends MY_Controller
         //output to json format
         echo json_encode($output);
     }
-
     //ajax get datatables
 }
 
