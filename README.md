@@ -1,4 +1,4 @@
-# Create-Datatable-CI-3
+# Datatable Basic Codeigniter 3
 ### Ini adalah code paling dasar untuk belajar menggunakan datatable.
 
 ### Saya akan memberikan sedikit gambaran kode yang saya tulis akan menjadi seperti dibawah ini :
