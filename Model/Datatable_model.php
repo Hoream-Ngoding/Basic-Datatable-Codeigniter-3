@@ -80,6 +80,12 @@ class Datatable_model extends CI_Model
         return $this->db->count_all_results();
     }
 
+function update($id_kegiatan, $data)
+    {
+        $this->db->where('id_kegiatan', $id_kegiatan);
+        $this->db->update($this->table, $data);
+    }
+    
     function delete($id_kegiatan)
     {
         $this->db->where('id_kegiatan', $id_kegiatan);
