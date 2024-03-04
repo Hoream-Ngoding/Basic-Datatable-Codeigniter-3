@@ -50,5 +50,11 @@ class Page extends MY_Controller
         echo json_encode($output);
     }
     //ajax get datatables
+
+    public function delete($id_kegiatan)
+    {
+        $this->promo->delete($id_kegiatan);
+        redirect(site_url('page'));
+    }
 }
 
