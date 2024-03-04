@@ -51,6 +51,43 @@ class Page extends MY_Controller
     }
     //ajax get datatables
 
+public function update($id_kegiatan)
+    {
+        $row = $this->page_model->get_by_id($id_kegiatan);
+
+        if ($row) {
+            $data = array(
+                'title' => 'Edit Program',
+                'button' => 'Update',
+                'action' => base_url('page/update_action'),
+
+                'id_kegiatan' => set_value('id_kegiatan', $row->id_kegiatan),
+                'nama_kegiatan' => set_value('nama_kegiatan', $row->nama_kegiatan),
+            );
+            $this->template->load('template/kerangka', 'program_form', $data);
+        } else {
+            redirect(site_url('page'));
+        }
+    }
+
+    public function update_action()
+    {
+        $this->_form_val();
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->update($this->input->post('id_kegiatan', TRUE));
+        } else {
+            $data = array(
+                'id_kegiatan' => $this->input->post('id_kegiatan', TRUE),
+                'nama_kegiatan' => $this->input->post('nama_kegiatan', TRUE),
+            );
+
+            $this->page_model->update($this->input->post('id_kegiatan', TRUE), $data);
+           
+            redirect(site_url('page'));
+        }
+    }
+    
     public function delete($id_kegiatan)
     {
         $this->promo->delete($id_kegiatan);
