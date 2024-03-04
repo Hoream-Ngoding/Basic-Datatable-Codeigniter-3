@@ -1,5 +1,5 @@
-// Template
-<----- javascript untuk menampilkan datatable
+<-- Template -->
+<-- javascript untuk menampilkan datatable -->
 <script>
 
 </script>
