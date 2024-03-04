@@ -1,6 +1,6 @@
 // Template
 
-// javascript untuk menampilkan datatable
+// javascript untuk menampilkan datatable //
 <script>
 
 </script>
