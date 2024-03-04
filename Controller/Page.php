@@ -28,7 +28,6 @@ class Page extends MY_Controller
             $no++;
             $row = array();
             $row[] = $no;
-            $row[] = $ta->id;
             $row[] = $ta->id_kegiatan;
             $row[] = $ta->nama_kegiatan;
 
