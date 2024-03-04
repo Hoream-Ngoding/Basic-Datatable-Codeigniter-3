@@ -8,11 +8,6 @@ class Datatable_model extends CI_Model
     /*nama tabel di My SQL*/
     public $table = 'tbl_kegiatan';
     
-    /*kolom di tabel*/
-    private $id = 'id';
-    private $id_kegiatan = 'id_kegiatan';
-    private $nama_kegiatan = 'id_kegiatan';
-    
     var $column_order = array(null, 'id_kegiatan', 'nama_kegiatan', null); /*atur database bidang kolom untuk dapat dipesan secara data ke datatable*/
     var $column_search = array('id_kegiatan', 'nama_kegiatan'); /*atur database bidang kolom agar dapat dicari datanya di search datatable*/
     var $order = array('id' => 'asc');
@@ -80,6 +75,15 @@ class Datatable_model extends CI_Model
         return $this->db->count_all_results();
     }
 
+public function get_by_id($id_kegiatan)
+    {
+        $this->db->from($this->table);
+        $this->db->where('id_kegiatan', $id_kegiatan);
+        $query = $this->db->get();
+
+        return $query->row();
+    }
+    
 function update($id_kegiatan, $data)
     {
         $this->db->where('id_kegiatan', $id_kegiatan);
