@@ -13,7 +13,7 @@
 
 			/*Memuat data untuk konten tabel dari sumber Ajax*/
 			"ajax": {
-				"url": "<?php echo site_url('member/kegiatan/program/ajax_list') ?>",
+				"url": "<?php echo site_url('page/ajax_list') ?>",
 				"type": "POST"
 			},
 
@@ -56,7 +56,6 @@
 					<div id="add-row_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
 						<div class="row">
 							<div class="col-sm-12">
-			          /*Datatables*/
 								<table id="table" class="display table table-striped table-hover dataTable" role="grid" aria-describedby="add-row_info">
 									<thead>
 										<tr role="row">
