@@ -6,7 +6,7 @@ Saya akan memberikan sedikit gambaran kode yang saya tulis akan menjadi seperti 
 <img width="793" alt="datatable" src="https://github.com/Hoream-Ngoding/Create-Datatable-CI-3/assets/94790639/1e8c0a3a-16c9-4144-92de-a8417b8a7243">
 
 
-
+```php
 public function delete($id)
     {
         $this->promo->delete($id);
@@ -14,4 +14,4 @@ public function delete($id)
         redirect(site_url('member/kegiatan/program'));
     }
 
-
+```
