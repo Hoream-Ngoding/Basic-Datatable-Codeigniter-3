@@ -1,8 +1,6 @@
-// <head>
-//    isi menyesuaikan
-// </head>
-// <body>
+// Template
 
+// javascript untuk menampilkan datatable
 <script>
 
 </script>
@@ -12,7 +10,7 @@
 
 
 
-// </body>
+// Template
 
 
 
