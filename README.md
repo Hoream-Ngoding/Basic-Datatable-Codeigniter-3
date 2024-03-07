@@ -1,5 +1,5 @@
 # Datatable Basic Codeigniter 3
-### Ini adalah code paling dasar untuk belajar menggunakan datatable.
+### Ini adalah code paling dasar untuk belajar menggunakan datatable di Codeigniter 3. Walaupun codeigniter 3 sudah usang. Saya belajar untuk berbagi ilmu.
 
 
 ### Saya akan memberikan sedikit gambaran kode yang saya tulis akan menjadi seperti dibawah ini :
